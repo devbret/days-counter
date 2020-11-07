@@ -41,3 +41,11 @@ footer {
 input {
     margin: 0px 15px;
 }
+button {
+    padding: 6px 8px;
+    border: 1px solid black;
+}
+button:hover {
+    background-color: gold;
+    cursor: pointer;
+}
