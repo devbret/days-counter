@@ -36,7 +36,7 @@ function main() {
         if (!checkDays()) {
             timer.innerHTML = `That date does not exist.`;
         } else {
-            timer.innerHTML = `There are exactly ${Math.abs(((then.getTime() - now.getTime()) / 86400000).toFixed(0))} days between today and ${1 + Number(months.value)}/${days.value}/${years.value}.`;
+            timer.innerHTML = `There are ${Math.abs(((then.getTime() - now.getTime()) / 86400000).toFixed(0))} days between today and ${1 + Number(months.value)}/${days.value}/${years.value}.`;
         }
     });
 }
