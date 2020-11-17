@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="author" content="Bret Bernhoft">
-    <meta name="description" content="Calculates how many days exist between the current date and a selected date.">
+    <meta name="description" content="Calculates how many days exist between two user selected dates.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Days Counter</title>
     <link rel="stylesheet" href="main.css">
@@ -14,9 +14,18 @@
       <h1>Days Counter</h1>
     </header>
     <main>
-      <input type="date" id="datePicker">
+      <div>
+        <div>
+          <p>Date #1</p>
+          <input type="date" id="datePicker1">
+        </div>
+        <div>
+          <p>Date #2</p>
+          <input type="date" id="datePicker2">
+        </div>
+      </div>
       <button id="submit">Submit</button>
-      <p id="timer"><i>Use the calendar above to select a date, then press Submit for your results.</i></p>
+      <p id="output"><i>Use the calendars above to select your dates, then press Submit for the results.</i></p>
     </main>
     <footer>
       <p><a>Built By:</a> <a href="https://devbret.com/">Bret Bernhoft</a></p>
