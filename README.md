@@ -1,2 +1,2 @@
 # Days Counter
-Calculates how many days exist between the current date and a selected date.
+Calculates how many days exist between two user selected dates.
