@@ -15,7 +15,10 @@ function main() {
             const datePickerArray1 = datePicker1.value.split(`-`);
             const datePickerArray2 = datePicker2.value.split(`-`);
             //Display final results; ultimately a matter of how many milliseconds between the two dates, divided by the number of milliseconds in a day.
-            output.innerHTML = `There are ${Math.abs(((then.getTime() - thenAgain.getTime()) / 86400000).toFixed(0))} days between ${datePickerArray1[1]}/${datePickerArray1[2]}/${datePickerArray1[0]} and ${datePickerArray2[1]}/${datePickerArray2[2]}/${datePickerArray2[0]}.`;
+            output.innerHTML = `There are <b>${Math.abs(((then.getTime() - thenAgain.getTime()) / 86400000).toFixed(0))}</b> days between ${datePickerArray1[1]}/${datePickerArray1[2]}/${datePickerArray1[0]} and ${datePickerArray2[1]}/${datePickerArray2[2]}/${datePickerArray2[0]}.`;
+        } else {
+            //If two dates are not selected, then instructions are given to the user to do so before receiving results.
+            output.innerHTML = `<i>Please select a date from <b>both calendars</b> to receive your results</i>.`;
         }
     });
 }
